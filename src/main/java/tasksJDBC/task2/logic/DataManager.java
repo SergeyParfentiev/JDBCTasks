@@ -27,7 +27,7 @@ public class DataManager {
         properties = new DBProperties("dbOrders.properties");
         createData = new CreateData();
 
-//        create();
+        create();
 
         clients = new Clients();
         goods = new Goods();
