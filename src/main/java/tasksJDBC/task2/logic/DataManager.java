@@ -151,12 +151,4 @@ public class DataManager {
     private boolean isGoodsCountMoreThenBy(Connection connection, String soldStr) {
         return goods.isCountMoreThenBy(connection, godsIdAndCost.get(0), Integer.parseInt(soldStr));
     }
-
-    public static void main(String[] args) throws SQLException{
-        DBProperties properties = new DBProperties("dbOrders.properties");
-        try (Connection connection = DriverManager.getConnection(properties.getUrl(),
-                properties.getUser(), properties.getPassword())) {
-            System.out.println();
-        }
-    }
 }
